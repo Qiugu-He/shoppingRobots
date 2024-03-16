@@ -33,7 +33,7 @@ class ShoppingCart extends React.Component<Props, State> {
             <div className={styles.cartContainer}>
               <button className={styles.button} onClick={this.handleClick}>
                 <FiShoppingCart />
-                <span>useContext check: My Shopping Cart ({value.shoppingCart.items.length})</span>
+                <span>My Shopping Cart ({value.shoppingCart.items.length})</span>
               </button>
               <div
                 className={styles.cartDropDown}

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import logo from "./assets/logo.svg";
+import logo from "./assets/robotics.png";
 import robots from "./mockdata/robots.json";
 import Robot from "./components/Robot";
 import styles from "./App.module.css";
@@ -20,6 +20,8 @@ const App: React.FC = (props) => {
 
   useEffect(() => {
     document.title = `useEffect check: Clicked ${count} times`;
+    document.title = `Robots`;
+
   }, [count]);
 
   useEffect(() => {
@@ -50,7 +52,7 @@ const App: React.FC = (props) => {
         <img src={logo} className={styles.appLogo} alt="logo" />
         <h1>Shopping Robots Online</h1>
       </div>
-      <span> useState check: </span>
+      {/* <span> useState check: </span>
       <button
         onClick={() => {
           setCount(count + 1);
@@ -58,7 +60,7 @@ const App: React.FC = (props) => {
       >
         Click Me ~
       </button>
-      <span> count {count}</span>
+      <span> count {count}</span> */}
       <ShoppingCart />
       {!loading ? (
         <div className={styles.robotList}>
